@@ -19,5 +19,8 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+
+        \App\Models\Chat::create(['name' => 'General Chat']);
+        \App\Models\Chat::create(['name' => 'Tech Talk']);
     }
 }
